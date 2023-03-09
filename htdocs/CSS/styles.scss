@@ -1,0 +1,18 @@
+/*browser reset*/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial;
+}
+.header{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 24px;
+  color:#8900ce;
+  background-color: rgba(0, 0, 0, 0.1);
+}
