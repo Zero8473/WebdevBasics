@@ -30,7 +30,8 @@ body {
       font-size: 16px;
       line-height: 1.2; }
   body .container-images {
-    display: block; }
+    display: block;
+    margin-bottom: 50px; }
     body .container-images figure {
       width: 1200px;
       margin-left: auto;
@@ -44,5 +45,14 @@ body {
       body .container-images figure:first-of-type img {
         width: 300px;
         border-radius: 50%; }
+  body .color-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
+    text-align: end; }
+    body .color-container p {
+      color: green;
+      font-family: Arial, "Times New Roman", sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
