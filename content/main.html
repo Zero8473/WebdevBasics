@@ -6,16 +6,19 @@
   <link href="CSS/styles.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+
 <div class="header" id="first">
   <h1>
     Header
   </h1>
 </div>
+
 <div class="text-container">
   <p class="text">
     This is a nested element
   </p>
 </div>
+
 <div class="container-images">
   <figure>
     <img src="https://m.media-amazon.com/images/I/811WvXGGgIL.png"/>
@@ -24,12 +27,31 @@
     <img src="https://images3.alphacoders.com/716/716428.png"/>
   </figure>
 </div>
+
 <div class="grid-container">
   <?php for ($i = 0; $i < 6; $i++): ?>
     <div class="color-container-<?php echo $i?> ">
       <p>Color Test <?php echo $i?></p>
     </div>
   <?php endfor ;?>
+</div>
+
+<div class="flex-container">
+  <div class="left-column">
+    <div class="flex-element">
+      <p>Flex 1</p>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="flex-element">
+      <p>Flex 2</p>
+    </div>
+
+    <div class="flex-element">
+      <p>Flex 3</p>
+    </div>
+  </div>
 </div>
 
 

@@ -97,5 +97,22 @@ body {
       border-right: 2px solid red; }
     body [class*="color-container"]:last-of-type {
       border-right: 2px solid red; }
+  body .flex-container {
+    display: flex;
+    /*justify-content: space-around;*/
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center; }
+    body .flex-container .left-column, body .flex-container .right-column {
+      border: 3px solid red;
+      width: 100%;
+      height: 400px; }
+      body .flex-container .left-column p, body .flex-container .right-column p {
+        border: 5px solid green;
+        background-color: brown;
+        font-size: 36px;
+        color: blue; }
 
 /*# sourceMappingURL=styles.css.map */
