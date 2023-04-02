@@ -59,14 +59,32 @@ body{
     }
 
   }
-  .color-container{
+  .grid-container{
+    display: grid;
+    //grid-template: 200px 300px / 20% 10% 70%;
+    //grid-template-columns: repeat(3, 100px);//1.Wert ist Anz. Wiederholungen, 2.Wert ist Breite
+    grid-template-columns: repeat(2, 200px 300px);
+    grid-gap: 20px 10px;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 180px;
-    text-align: end;
+    margin-bottom: 30px;
+
+  }
+
+  //Any CSS class that contains color-container
+  [class*="color-container"]{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    //margin-bottom: 30px;
+    text-align: center;
+    border: 2px solid red;
+    //border-right: none;
+    background-color: aqua;
     p{
       color: green;
+      /*
 
       //color: rgb(190,0,255);
       //color: hsl(50, 70%, 50%);
@@ -94,12 +112,19 @@ body{
 
       //line-height: 1.5; //Mulitiplikator relativ zum Standardwert in Abhängigkeit
       //line-height: 12px;
+      */
 
       font-family: Arial, "Times New Roman", sans-serif;
-
-
-
     }
+    &:nth-of-type(3n){
+      border-right: 2px solid red;
+    }
+    &:last-of-type{
+      border-right: 2px solid red;
+    }
+  }
+  .color-container-1{
+   // grid-area: 2/ 3/ 3/ span 2;
   }
 }
 
